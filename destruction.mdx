@@ -1,0 +1,61 @@
+---
+title: 'Planet Destruction API'
+description: 'API documentation for Death Star destruction capabilities'
+sidebarTitle: 'Destruction API'
+---
+
+## Planet Destruction System
+
+Interface with the Death Star's primary weapon system using our RESTful API.
+
+### Authentication
+
+```bash
+# Get API token
+curl -X POST https://api.deathstar.empire/auth \
+  -H "Authorization: Bearer ${IMPERIAL_KEY}" \
+  -d '{"access_level": "planet_destroyer"}'
+```
+
+### Target Selection
+
+```json
+POST /api/v1/targets
+{
+  "planet": {
+    "name": "Alderaan",
+    "coordinates": {
+      "sector": "Alderaan sector",
+      "system": "Alderaan system",
+      "grid": "R-36"
+    }
+  },
+  "confirmation": {
+    "imperialAuthorization": "ORDER-66",
+    "targetingConfirmed": true
+  }
+}
+```
+
+<Warning>
+Ensure proper target verification. Accidentally destroying the wrong planet is a Class-1 Imperial violation.
+</Warning>
+
+### System Status
+
+Monitor destruction progress:
+
+```bash
+curl https://api.deathstar.empire/status \
+  -H "Authorization: Bearer ${TOKEN}"
+```
+
+## Rate Limits
+
+- 1 planet destruction per day
+- 5 target acquisitions per hour
+- Unlimited status checks
+
+<Note>
+All destructions are logged for Imperial audit purposes.
+</Note>
