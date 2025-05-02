@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "linden",
   "name": "May the Fourth be with you",
   "colors": {
     "primary": "#DC2626",
@@ -11,7 +11,7 @@
   "navigation": {
     "groups": [
       {
-        "group": "The Force Awakens",
+        "group": "Welcome to the Galaxy",
         "pages": [
           "quickstart"
         ]
