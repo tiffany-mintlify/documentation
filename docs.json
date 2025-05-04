@@ -3,9 +3,9 @@
   "theme": "linden",
   "name": "May the Fourth be with you",
   "colors": {
-    "primary": "#DC2626",
-    "light": "#EF4444",
-    "dark": "#991B1B"
+    "primary": "#333333",
+    "light": "#666666",
+    "dark": "#1A1A1A"
   },
   "favicon": "/redfavicon.svg",
   "navigation": {
