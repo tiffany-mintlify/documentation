@@ -4,8 +4,25 @@
   "name": "May the Fourth be with you",
   "colors": {
     "primary": "#333333",
-    "light": "#666666",
+    "light": "#EEEEEE",
     "dark": "#1A1A1A"
+  },
+  "background": {
+    "color": {
+      "dark": "#000000"
+    }
+  },
+  "fonts": {
+    "body": {
+      "family": "Orbitron"
+    },
+    "heading": {
+      "family": "Orbitron"
+    }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
   },
   "favicon": "/redfavicon.svg",
   "navigation": {
@@ -13,7 +30,7 @@
       {
         "group": "Welcome to the Galaxy",
         "pages": [
-          "quickstart"
+          "index"
         ]
       },
       {
@@ -32,12 +49,14 @@
       }
     ]
   },
-  "logo": {
-    "light": "/lightlogo.png" ,
-    "dark": "/darklogo.png"
-  },
+  "logo": "/logo.svg",
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "May the Fourth be with you",
+        "href": "https://mintlify.com/?utm_medium=social&utm_campaign=may4th_memes"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Jump to Hyperspace",
